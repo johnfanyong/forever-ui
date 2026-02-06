@@ -13,7 +13,10 @@
     "components",
     "ui",
     "library",
-    "typescript"
+    "typescript",
+    "vue-components",
+    "ui-library",
+    "QueryBuilder"
   ],
   "main": "./dist/forever-ui.umd.js",
   "module": "./dist/forever-ui.es.js",
@@ -24,10 +27,13 @@
       "import": "./dist/forever-ui.es.js",
       "require": "./dist/forever-ui.umd.js"
     },
-    "./style.css": "./dist/style.css"
+    "./style.css": "./dist/forever-ui.css"
   },
   "files": [
-    "dist"
+    "dist/",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
   ],
   "sideEffects": [
     "*.css"
@@ -40,34 +46,14 @@
     "test:coverage": "vitest run --coverage",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "type-check": "vue-tsc --noEmit",
-    "demo:dev": "cd demo && pnpm install && pnpm dev",
-    "demo:build": "cd demo && pnpm build",
     "prepublishOnly": "pnpm build",
-    "release": "bash scripts/publish.sh"
+    "release": "bash scripts/publish.sh",
+    "publish": "npm publish --access public"
   },
   "dependencies": {
-    "vue": "^3.5.26",
     "vue-draggable-next": "^2.3.0"
   },
-  "devDependencies": {
-    "@rushstack/eslint-patch": "^1.10.5",
-    "@tsconfig/node22": "^22.0.2",
-    "@types/node": "^22.15.14",
-    "@vitejs/plugin-vue": "^6.0.3",
-    "@vue/eslint-config-prettier": "^10.2.0",
-    "@vue/eslint-config-typescript": "^14.6.0",
-    "@vue/test-utils": "^2.4.6",
-    "@vue/tsconfig": "^0.7.0",
-    "eslint": "^9.29.0",
-    "eslint-plugin-vue": "^9.33.0",
-    "happy-dom": "^20.0.11",
-    "terser": "^5.46.0",
-    "typescript": "^5.9.3",
-    "vite": "^7.3.0",
-    "vite-plugin-dts": "^4.5.4",
-    "vitest": "^4.0.16",
-    "vue-tsc": "^2.2.0"
-  },
+  "devDependencies": {},
   "peerDependencies": {
     "vue": "^3.3.0"
   },
