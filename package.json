@@ -1,6 +1,6 @@
 {
   "name": "forever-ui",
-  "version": "1.0.6",
+  "version": "1.0.0",
   "description": "一个基于Vue 3的现代化UI组件库",
   "author": "Forever",
   "license": "MIT",
@@ -8,16 +8,7 @@
     "type": "git",
     "url": "https://github.com/your-username/forever-ui.git"
   },
-  "keywords": [
-    "vue3",
-    "components",
-    "ui",
-    "library",
-    "typescript",
-    "vue-components",
-    "ui-library",
-    "QueryBuilder"
-  ],
+  "keywords": ["vue3", "components", "ui", "library", "typescript", "vue-components", "ui-library"],
   "main": "./dist/forever-ui.umd.js",
   "module": "./dist/forever-ui.es.js",
   "types": "./dist/types/index.d.ts",
@@ -29,15 +20,8 @@
     },
     "./style.css": "./dist/forever-ui.css"
   },
-  "files": [
-    "dist/",
-    "README.md",
-    "LICENSE",
-    "CHANGELOG.md"
-  ],
-  "sideEffects": [
-    "*.css"
-  ],
+  "files": ["dist/", "README.md", "LICENSE", "CHANGELOG.md"],
+  "sideEffects": ["*.css"],
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
@@ -46,9 +30,7 @@
     "test:coverage": "vitest run --coverage",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "type-check": "vue-tsc --noEmit",
-    "prepublishOnly": "pnpm build",
-    "release": "bash scripts/publish.sh",
-    "publish": "npm publish --access public"
+    "prepublishOnly": "pnpm build"
   },
   "dependencies": {
     "vue-draggable-next": "^2.3.0"
