@@ -1,0 +1,51 @@
+# Build outputs
+demo/
+docs/
+src/
+tests/
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+
+# Development files
+.git/
+.github/
+node_modules/
+*.log
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build artifacts (will be regenerated)
+dist/
+
+# Configuration files not needed in package
+vite.config.ts
+vitest.config.ts
+tsconfig.json
+tsconfig.node.json
+eslint.config.js
+.prettierrc
+.editorconfig
+
+# Documentation source (keep built docs)
+docs/src/
+docs/scripts/
+
+# Test files
+coverage/
+.jest/
+.vitest/

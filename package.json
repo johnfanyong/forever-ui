@@ -1,0 +1,77 @@
+{
+  "name": "forever-ui",
+  "version": "1.0.0",
+  "description": "一个基于Vue 3的现代化UI组件库",
+  "author": "Forever",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/forever-ui.git"
+  },
+  "keywords": [
+    "vue3",
+    "components",
+    "ui",
+    "library",
+    "typescript"
+  ],
+  "main": "./dist/forever-ui.umd.js",
+  "module": "./dist/forever-ui.es.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/forever-ui.es.js",
+      "require": "./dist/forever-ui.umd.js"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": [
+    "*.css"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "type-check": "vue-tsc --noEmit",
+    "demo:dev": "cd demo && pnpm install && pnpm dev",
+    "demo:build": "cd demo && pnpm build",
+    "prepublishOnly": "pnpm build",
+    "release": "bash scripts/publish.sh"
+  },
+  "dependencies": {
+    "vue": "^3.5.26",
+    "vue-draggable-next": "^2.3.0"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.10.5",
+    "@tsconfig/node22": "^22.0.2",
+    "@types/node": "^22.15.14",
+    "@vitejs/plugin-vue": "^6.0.3",
+    "@vue/eslint-config-prettier": "^10.2.0",
+    "@vue/eslint-config-typescript": "^14.6.0",
+    "@vue/test-utils": "^2.4.6",
+    "@vue/tsconfig": "^0.7.0",
+    "eslint": "^9.29.0",
+    "eslint-plugin-vue": "^9.33.0",
+    "happy-dom": "^20.0.11",
+    "terser": "^5.46.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.0",
+    "vite-plugin-dts": "^4.5.4",
+    "vitest": "^4.0.16",
+    "vue-tsc": "^2.2.0"
+  },
+  "peerDependencies": {
+    "vue": "^3.3.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "name": "forever-ui",
+  "version": "1.0.0",
+  "description": "一个基于Vue 3的现代化UI组件库",
+  "author": "Forever",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/forever-ui.git"
+  },
+  "keywords": ["vue3", "components", "ui", "library", "typescript", "vue-components", "ui-library"],
+  "main": "./dist/forever-ui.umd.js",
+  "module": "./dist/forever-ui.es.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/forever-ui.es.js",
+      "require": "./dist/forever-ui.umd.js"
+    },
+    "./style.css": "./dist/forever-ui.css"
+  },
+  "files": ["dist/", "README.md", "LICENSE", "CHANGELOG.md"],
+  "sideEffects": ["*.css"],
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "type-check": "vue-tsc --noEmit",
+    "prepublishOnly": "pnpm build"
+  },
+  "dependencies": {
+    "vue-draggable-next": "^2.3.0"
+  },
+  "devDependencies": {},
+  "peerDependencies": {
+    "vue": "^3.3.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
