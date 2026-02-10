@@ -3,7 +3,7 @@
 一个基于 Vue 3 和 TypeScript 的现代化 UI 组件库。
 
 [![npm version](https://img.shields.io/npm/v/forever-ui.svg)](https://www.npmjs.com/package/forever-ui)
-[![License](https://img.shields.io/npm/l/forever-ui.svg)](https://github.com/your-username/forever-ui/blob/main/LICENSE)
+[![License](https://img.shields.io/npm/l/forever-ui.svg)](https://github.com/johnfanyong/forever-ui/blob/main/LICENSE)
 [![Downloads](https://img.shields.io/npm/dt/forever-ui.svg)](https://www.npmjs.com/package/forever-ui)
 
 ## 特性
@@ -67,7 +67,7 @@ import Button from "forever-ui/button";
 
 ```bash
 # 克隆项目
-git clone https://github.com/your-username/forever-ui.git
+git clone https://github.com/johnfanyong/forever-ui.git
 cd forever-ui
 
 # 安装依赖

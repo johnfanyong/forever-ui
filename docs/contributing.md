@@ -6,7 +6,7 @@
 
 ```bash
 # 克隆项目
-git clone https://github.com/your-username/forever-ui.git
+git clone https://github.com/johnfanyong/forever-ui.git
 cd forever-ui
 
 # 安装依赖

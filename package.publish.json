@@ -6,7 +6,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/forever-ui.git"
+    "url": "https://github.com/johnfanyong/forever-ui.git"
   },
   "keywords": ["vue3", "components", "ui", "library", "typescript", "vue-components", "ui-library"],
   "main": "./dist/forever-ui.umd.js",
